@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据可视化</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.myscroll').myScroll({
+                speed: 60, //数值越大，速度越慢
+                rowHeight: 38 //li的高度
+            });
+        });
+
+        $(document).ready(function () {
+            var whei = $(window).width()
+            $("html").css({ fontSize: whei / 22 });
+            $(window).resize(function () {
+                var whei = $(window).width();
+                $("html").css({ fontSize: whei / 22 })
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="main">
+    <div class="header">
+        <div class="header-left fl" id="time"></div>
+        <div class="header-center fl">
+            <div class="header-title">
+                          心脏病数据可视化
+            </div>
+            <div class="header-img"></div>
+        </div>
+        <div class="header-right fl"></div>
+        <div class="header-bottom fl"></div>
+
+    </div>
+
+    <div class="center">
+    	<!--左边部分-->
+        <div class="center-left fl">
+        	<!--/////////性别年龄分布模块///////////-->
+            <div class="left-top">
+              <!--  <h1 id="ceshi">数据可视化</h1>-->
+               <!-- <div class="title">性别年龄分布图</div>-->
+             <!--  <h2>性别年龄分布图</h2>-->
+              <div id="chart11" class="allnav"></div>
+
+            </div>
+            <!--////////////////城市死亡率模块////////////////-->
+            <div class="left-cen">
+                <div class="title">城市死亡率</div>
+                <ul class="company">
+                    <li>健康小知识：数据可视化测试</li>
+                    <li>健康小知识：业户编号业户编号</li>
+                    <li>健康小知识：数据可视化测试</li>
+                    <li>健康小知识试：数据测试</li>
+                    <li>健康小知识：数据测试,数据测试,数据测试,数据测试,数据测试,数据测试,数据测试,数据测试....</li>
+                </ul>
+
+            </div>
+            <!--/////////////心脏致病因素及致死模块///////////-->
+            <div class="left-bottom"> 
+               <div id="chart3" class="allnav">
+               	
+               </div>               
+
+            </div>
+        </div>
+    <!--    /////////中间部分-->
+        <div class="center-cen fl">
+            <div class="cen-top">                           
+               <div id="chart1" class="allnav" >
+               	
+               </div>
+               <!--<div  class="map1">
+               	
+               </div>       -->
+            </div>
+            <div class="cen-bottom">
+            <!--    <div class="title">xxxxxx</div>-->
+                <div class="bottom-b">
+                    <div id="chart4" class="allnav"></div>
+                </div>
+
+            </div>
+        </div>
+        <!--////////右边-->
+        <div class="center-right fr">
+            <div class="right-top">         
+               <div id="chart2" class="allnav">
+               	
+               </div>
+            </div>
+            <div class="right-cen">
+                <div class="title">心脏病致病因素及致死人生</div>                          
+
+                <div class="echart wenzi">
+                    <div class="gun">
+                        <span>排名</span>
+                        <span>省份</span>
+                        <span>地区</span>
+                    </div>
+                    <div id="FontScroll" class="myscroll">
+                        <ul>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>1</b>
+                                    </span>
+                                    <span>北京</span>
+                                    <span>中国医学科学院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>2</b>
+                                    </span>
+                                    <span>上海</span>
+                                    <span>复旦大学附属中山医院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>3</b>
+                                    </span>
+                                    <span>辽宁</span>
+                                    <span>中国人民解放军北部医院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>4</b>
+                                    </span>
+                                    <span>浙江</span>
+                                    <span>浙江医学院附属第二医院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>5</b>
+                                    </span>
+                                    <span>广东</span>
+                                    <span>广东省人民医院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>6</b>
+                                    </span>
+                                    <span>四川</span>
+                                    <span>四川大学华西医院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>7</b>
+                                    </span>
+                                    <span>黑龙江</span>
+                                    <span>哈尔滨医科大</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>8</b>
+                                    </span>
+                                    <span>陕西</span>
+                                    <span>空军军医大学西京医院</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>9</b>
+                                    </span>
+                                    <span>2小时15分</span>
+                                    <span>2小时15分</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>10</b>
+                                    </span>
+                                    <span>2小时15分</span>
+                                    <span>2小时15分</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>11</b>
+                                    </span>
+                                    <span>2小时15分</span>
+                                    <span>2小时15分</span>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fontInner clearfix">
+                                    <span>
+                                        <b>12</b>
+                                    </span>
+                                    <span>2小时15分</span>
+                                    <span>2小时15分</span>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+              
+            </div>
+            <div class="right-bottom">              
+                    <div id="chart5" class="allnav"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/wodry.min.js"></script>
+<script src="js/fontscroll.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/china.js"></script>
+<script>
+
+    //顶部时间
+    function getTime(){
+        var myDate = new Date();
+        var myYear = myDate.getFullYear(); //获取完整的年份(4位,1970-????)
+        var myMonth = myDate.getMonth()+1; //获取当前月份(0-11,0代表1月)
+        var myToday = myDate.getDate(); //获取当前日(1-31)
+        var myDay = myDate.getDay(); //获取当前星期X(0-6,0代表星期天)
+        var myHour = myDate.getHours(); //获取当前小时数(0-23)
+        var myMinute = myDate.getMinutes(); //获取当前分钟数(0-59)
+        var mySecond = myDate.getSeconds(); //获取当前秒数(0-59)
+        var week = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+        var nowTime;
+
+        nowTime = myYear+'-'+fillZero(myMonth)+'-'+fillZero(myToday)+'&nbsp;&nbsp;'+fillZero(myHour)+':'+fillZero(myMinute)+':'+fillZero(mySecond)+'&nbsp;&nbsp;'+week[myDay]+'&nbsp;&nbsp;';
+        //console.log(nowTime);
+        $('#time').html(nowTime);
+    };
+    function fillZero(str){
+        var realNum;
+        if(str<10){
+            realNum	= '0'+str;
+        }else{
+            realNum	= str;
+        }
+        return realNum;
+    }
+    setInterval(getTime,1000);
+
+</script>
+
+</body>
+</html>
